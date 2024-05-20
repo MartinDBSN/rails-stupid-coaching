@@ -1,0 +1,16 @@
+
+<div class="mt-2 col-6 mx-auto">
+<h1>The right answer:</h1>
+
+
+
+<% if params[:question][-1] == "?" %>
+<p class="font-weight-bold"><%="Silly question, get dressed and go to work!"%></p>
+<% elsif params[:question] == "I am going to work"%>
+<p class="font-weight-bold"><%="Great!"%></p>
+<% else %>
+<p class="font-weight-bold"><%="I don't care, get dressed and go to work!"%></p>
+<% end %>
+<br>
+ <a class="btn btn-primary mt-2" href="../ask">Ask a new question</a>
+</div>
